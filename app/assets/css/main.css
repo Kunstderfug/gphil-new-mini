@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer utilities {
+    /* roboto-100 - latin */
+    @font-face {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src:
+            local(""),
+            url("../../assets/fonts/roboto-v27-latin-100.woff2") format("woff2"),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../../assets/fonts/roboto-v27-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    /* roboto-500 - latin */
+    @font-face {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src:
+            local(""),
+            url("../../assets/fonts/roboto-v27-latin-500.woff2") format("woff2"),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../../assets/fonts/roboto-v27-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+}
+
+@layer base {
+    :root {
+        scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    ::-webkit-scrollbar:hover {
+        width: 1rem;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        @apply bg-white;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply bg-gray-200;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-300;
+    }
+
+    html {
+        margin-right: calc(100vw - 100%);
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        @apply bg-linear-to-b from-zinc-900 via-purple-900 to-stone-800 text-lg leading-loose text-gray-100 xl:text-xl xl:leading-loose 2xl:text-2xl;
+        @apply bg-[url('/assets/bg-dark-desktop.webp')] bg-no-repeat bg-cover bg-fixed bg-center;
+    }
+
+    h1 {
+        @apply my-8 text-4xl md:text-6xl;
+    }
+
+    h2 {
+        @apply my-6 text-2xl font-bold md:text-4xl;
+    }
+
+    h3 {
+        @apply my-4 text-2xl font-bold md:text-3xl;
+    }
+
+    h4 {
+        @apply my-3 text-xl md:text-2xl;
+    }
+
+    h5 {
+        @apply my-2 text-lg md:text-xl;
+    }
+
+    p {
+        @apply my-4 text-lg leading-normal lg:leading-loose;
+    }
+
+    li {
+        @apply my-4 text-base leading-normal lg:text-lg lg:leading-loose;
+        @apply list-inside list-disc;
+    }
+
+    p {
+        @apply text-base leading-normal lg:text-lg lg:leading-loose;
+    }
+
+    progress {
+        @apply h-2 bg-transparent transition-all duration-200;
+        @apply rounded-full;
+        @apply text-white;
+        @apply w-full;
+    }
+
+    button {
+        display: inline;
+    }
+
+    button:disabled {
+        @apply cursor-not-allowed text-gray-400;
+    }
+}
