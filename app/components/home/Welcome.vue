@@ -29,7 +29,7 @@ const announcementText = "GPhil is now officially available on Apple and Microso
                                     class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105"
                                 >
                                     <span class="font-semibold text-white/70 text-lg">For macOS</span>
-                                    <img src="/assets/macos.png" alt="macos" class="w-16" />
+                                    <img src="/assets/macos.webp" alt="macos" class="w-16" />
                                 </div>
                             </NuxtLink>
 
@@ -38,7 +38,7 @@ const announcementText = "GPhil is now officially available on Apple and Microso
                                     class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105"
                                 >
                                     <span class="font-semibold text-white/70 text-lg">For iPad</span>
-                                    <img src="/assets/apple.svg" alt="iPad" class="w-16" />
+                                    <img src="/assets/ios.webp" alt="iPad" class="w-16" />
                                 </div>
                             </NuxtLink>
 
