@@ -7,7 +7,7 @@ const announcementText = "GPhil is now officially available on Apple and Microso
 
 <template>
     <!-- DOWNLOAD DESKTOP APPS -->
-    <section class="hidden sm:block">
+    <section>
         <!-- <HomeTitle title="Download G-Phil Apps" /> -->
         <div class="w-full flex justify-center border-2 border-pink-600 rounded-lg shadow-md p-8 my-6">
             <div class="w-full">
@@ -17,20 +17,14 @@ const announcementText = "GPhil is now officially available on Apple and Microso
 
                 <div class="w-full flex flex-col justify-start items-center h-auto">
                     <div
-                        class="w-full flex flex-col justify-center sm:grid sm:grid-cols-3 sm:justify-items-center gap-4 mt-8"
+                        class="w-full flex flex-col items-center justify-center sm:grid sm:grid-cols-3 sm:justify-items-center gap-4 mt-8"
                     >
-                        <div class="flex flex-col items-center justify-center gap-4">
-                            <NuxtLink to="https://apps.apple.com/us/app/gphil/id6740543718" target="_blank">
-                                <button class="flex flex-col grow items-center justify-center gap-6">
-                                    <span class="font-bold text-xl"> For macOS </span>
-                                    <img
-                                        src="/assets/macos.png"
-                                        alt="macos"
-                                        class="w-16 duration-200 hover:scale-105"
-                                    />
-                                </button>
-                            </NuxtLink>
-                        </div>
+                        <NuxtLink to="https://apps.apple.com/us/app/gphil/id6740543718" target="_blank">
+                            <button class="flex flex-col grow items-center justify-center gap-6">
+                                <span class="font-bold text-xl"> For macOS </span>
+                                <img src="/assets/macos.png" alt="macos" class="w-16 duration-200 hover:scale-105" />
+                            </button>
+                        </NuxtLink>
 
                         <NuxtLink to="https://apps.apple.com/us/app/gphil/id6740543718" target="_blank">
                             <button class="flex flex-col grow items-center justify-center gap-6">
@@ -59,8 +53,9 @@ const announcementText = "GPhil is now officially available on Apple and Microso
     </section>
 
     <!-- TO THE DOCS AND LIBRARY BUTTON -->
-    <div class="flex-container">
-        <HomeTitle title="Or continue to the web version (in development)" />
+    <div class="flex-container items-center">
+        <div class="font-black mb-[-1rem]">Or continue to the web version</div>
+        <p>(in development, only for large screens so far)</p>
 
         <NuxtLink to="https://app.g-phil.app" class="w-full flex justify-center items-center">
             <Button
