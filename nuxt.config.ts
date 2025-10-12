@@ -30,4 +30,9 @@ export default defineNuxtConfig({
     },
     preset: "netlify",
   },
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    },
+  },
 });
