@@ -7,23 +7,19 @@ useSeoMeta({
 </script>
 
 <template>
-    <div>
-        <NuxtLayout name="home">
-            <HomeMobileCredit />
-            <HomeLogo />
+    <div class="mt-8">
+        <HomeLogo />
+        <HomeWelcome />
+        <!-- <HomeSupport /> -->
+        <!-- <HomeFeedback /> -->
 
-            <HomeWelcome />
-            <!-- <HomeSupport /> -->
-            <!-- <HomeFeedback /> -->
-
-            <!-- <section id="top" class="-mb-4">
-                <div class="w-full mt-4 flex justify-center items-center gap-4">
-                    <h3 class="text-center text-pink-500">ENJOY!</h3>
-                    <h3 class="text-pink-500">
-                        <UIcon name="i-ph:smiley" class="stroke-pink-500 fill-pink-500" />
-                    </h3>
-                </div>
-            </section> -->
-        </NuxtLayout>
+        <!-- <section id="top" class="-mb-4">
+            <div class="w-full mt-4 flex justify-center items-center gap-4">
+                <h3 class="text-center text-pink-500">ENJOY!</h3>
+                <h3 class="text-pink-500">
+                    <UIcon name="i-ph:smiley" class="stroke-pink-500 fill-pink-500" />
+                </h3>
+            </div>
+        </section> -->
     </div>
 </template>

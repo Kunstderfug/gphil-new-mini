@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <!-- <NuxtLayout name="default"> -->
-        <NuxtLoadingIndicator />
-        <UApp>
-            <NuxtPage />
-        </UApp>
-        <!-- </NuxtLayout> -->
+    <div class="min-h-screen">
+        <NuxtLayout name="home">
+            <NuxtLoadingIndicator />
+            <UApp>
+                <NuxtPage />
+            </UApp>
+        </NuxtLayout>
     </div>
 </template>
 

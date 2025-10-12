@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Or your specific dark background color */
+}
+
 @layer utilities {
     /* roboto-100 - latin */
     @font-face {
