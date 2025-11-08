@@ -1,0 +1,17 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+//
+// Example:
+[
+  {
+    "label": "Start dev",
+    "command": "pnpm dev",
+    "reveal": "always",
+    "shell": "system"
+  },
+  {
+    "label": "Netlify build && deploy",
+    "command": "netlify deploy --prod",
+    "reveal": "always",
+    "shell": "system"
+  }
+]
