@@ -9,7 +9,14 @@ useSeoMeta({
 <template>
     <div class="mt-8">
         <HomeLogo />
-        <HomeWelcome />
+        <HomeDownload />
+        <HomeReviews />
+        <div class="my-20">
+            <HomeYoutubeVideos />
+        </div>
+        <div class="my-20">
+            <HomeYoutubeChannel />
+        </div>
         <!-- <HomeSupport /> -->
         <!-- <HomeFeedback /> -->
 

@@ -1,4 +1,4 @@
-/* eslint-disable vue/html-self-closing */
+/** eslint-disable vue/html-self-closing */
 <script lang="ts" setup>
 const style = useStyle();
 
@@ -11,11 +11,11 @@ const announcementText = "GPhil is now officially available on Apple and Microso
         <section>
             <!-- <HomeTitle title="Download G-Phil Apps" /> -->
             <div
-                class="w-full flex justify-center border border-white/10 bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-md rounded-xl shadow-2xl p-8 my-6"
+                class="w-full flex justify-center border border-white/10 backdrop-blur-md rounded-xl shadow-2xl p-8 my-6"
             >
                 <div class="w-full">
                     <div
-                        class="bg-gradient-to-r from-pink-500/80 to-purple-600/80 font-bold text-lg p-4 rounded-lg shadow-lg text-white/70 text-center custom-pulse"
+                        class="bg-linear-to-r from-pink-500/80 to-purple-600/80 font-bold text-lg p-4 rounded-lg shadow-lg text-white/70 text-center custom-pulse"
                     >
                         {{ announcementText }}
                     </div>
@@ -26,19 +26,24 @@ const announcementText = "GPhil is now officially available on Apple and Microso
                         >
                             <NuxtLink to="https://apps.apple.com/us/app/gphil/id6740543718" target="_blank">
                                 <div
-                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 w-52"
                                 >
                                     <span class="font-semibold text-white/70 text-lg">For macOS</span>
-                                    <img src="/assets/macos.webp" alt="macos" class="w-16" />
+
+                                    <div class="w-16 h-16 flex items-center justify-center overflow-hidden rounded">
+                                        <img src="/assets/macos.webp" alt="macos" class="w-full h-full object-cover" />
+                                    </div>
                                 </div>
                             </NuxtLink>
 
                             <NuxtLink to="https://apps.apple.com/us/app/gphil/id6740543718" target="_blank">
                                 <div
-                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 w-32"
                                 >
                                     <span class="font-semibold text-white/70 text-lg">For iPad</span>
-                                    <img src="/assets/ios.webp" alt="iPad" class="w-16" />
+                                    <div class="w-16 h-16 flex items-center justify-center overflow-hidden rounded">
+                                        <img src="/assets/ios.webp" alt="iPad" class="w-full h-full object-contain" />
+                                    </div>
                                 </div>
                             </NuxtLink>
 
@@ -47,10 +52,16 @@ const announcementText = "GPhil is now officially available on Apple and Microso
                                 target="_blank"
                             >
                                 <div
-                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 w-52"
                                 >
                                     <span class="font-semibold text-white/70 text-lg">For Windows</span>
-                                    <img src="/assets/windows.svg" alt="windows" class="w-16" />
+                                    <div class="w-16 h-16 flex items-center justify-center overflow-hidden rounded">
+                                        <img
+                                            src="/assets/windows.svg"
+                                            alt="windows"
+                                            class="w-full h-full object-cover"
+                                        />
+                                    </div>
                                 </div>
                             </NuxtLink>
                         </div>
@@ -74,7 +85,7 @@ const announcementText = "GPhil is now officially available on Apple and Microso
                     dark
                     right
                     text="Let's go"
-                    class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-400/30 backdrop-blur-md shadow-lg hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300"
+                    class="bg-linear-to-r from-purple-500/20 to-pink-500/20 border border-purple-400/30 backdrop-blur-md shadow-lg hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300"
                 >
                     <UIcon name="i-quill:chevron-right" :class="style.iconSize" />
                 </Button>
