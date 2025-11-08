@@ -18,10 +18,10 @@ const videos = [
 
 <template>
     <section class="mt-20">
-        <div class="max-w-6xl mx-auto px-4">
+        <div class="max-w-6xl mx-auto px-4 animate-fade-in-up">
             <div class="text-center mb-10">
                 <h2 class="text-3xl font-bold text-white/70 mb-3">Live Performance Examples</h2>
-                <div class="w-16 h-0.5 bg-gradient-to-r from-pink-500/70 to-purple-500/70 mx-auto" />
+                <div class="w-16 h-0.5 bg-linear-to-r from-pink-500/70 to-purple-500/70 mx-auto"></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -38,7 +38,7 @@ const videos = [
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
                             class="w-full h-full"
-                        />
+                        ></iframe>
                     </div>
                     <div class="px-5 py-4">
                         <h3 class="font-semibold text-white/70 text-base leading-snug">
@@ -52,6 +52,22 @@ const videos = [
 </template>
 
 <style scoped>
+/* Simple fade/slide-in animation for the section */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.7s ease-out both;
+}
+
 /* Custom styles for the YouTube embed wrapper */
 iframe {
     border-radius: 1rem;

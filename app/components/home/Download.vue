@@ -1,4 +1,4 @@
-/** eslint-disable vue/html-self-closing */
+/** eslint-disable vue/html-self-closing */ /** eslint-disable vue/html-self-closing */
 <script lang="ts" setup>
 const style = useStyle();
 

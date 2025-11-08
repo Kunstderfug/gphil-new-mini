@@ -31,7 +31,7 @@ const reviews = [
     <section class="my-20">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-white/70 mb-4">What Musicians Are Saying</h2>
-            <div class="w-16 h-0.5 bg-gradient-to-r from-pink-500/70 to-purple-500/70 mx-auto mb-4" />
+            <div class="w-16 h-0.5 bg-linear-to-r from-pink-500/70 to-purple-500/70 mx-auto mb-4"></div>
             <p class="text-gray-400 max-w-2xl mx-auto">
                 Hear from fellow musicians who have transformed their practice and performance with G-Phil
             </p>

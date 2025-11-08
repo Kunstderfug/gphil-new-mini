@@ -11,7 +11,8 @@ useSeoMeta({
         <HomeLogo />
         <HomeDownload />
         <HomeReviews />
-        <div class="my-20">
+
+        <div id="home-youtube-section" class="my-20">
             <HomeYoutubeVideos />
         </div>
         <div class="my-20">

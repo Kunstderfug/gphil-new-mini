@@ -18,7 +18,7 @@ const channelVideos = [
 
 <template>
     <section class="mt-20">
-        <div class="max-w-6xl mx-auto px-4">
+        <div class="max-w-6xl mx-auto px-4 youtube-channel-section">
             <div class="text-center mb-8">
                 <h2 class="text-3xl font-bold text-white/70 mb-4">Official GPhil YouTube Channel</h2>
                 <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ const channelVideos = [
                 <div
                     v-for="video in channelVideos"
                     :key="video.id"
-                    class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg hover:bg-white/10 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
+                    class="youtube-card bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:shadow-2xl"
                 >
                     <div class="aspect-video">
                         <iframe
@@ -53,7 +53,7 @@ const channelVideos = [
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
                             class="w-full h-full"
-                        />
+                        ></iframe>
                     </div>
                     <div class="p-4">
                         <h3 class="font-semibold text-white/70 text-sm md:text-base mb-1">
@@ -74,5 +74,45 @@ iframe {
 iframe:focus {
     outline: 2px solid rgba(147, 51, 234, 0.5);
     outline-offset: 2px;
+}
+
+/* Simple fade/slide-in motion */
+.youtube-channel-section {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: yc-fade-in 700ms ease-out forwards;
+    animation-delay: 120ms;
+}
+
+.youtube-card {
+    opacity: 0;
+    transform: translateY(14px);
+    animation: yc-card-in 600ms ease-out forwards;
+}
+
+.youtube-card:nth-child(1) {
+    animation-delay: 120ms;
+}
+
+.youtube-card:nth-child(2) {
+    animation-delay: 180ms;
+}
+
+.youtube-card:nth-child(3) {
+    animation-delay: 240ms;
+}
+
+@keyframes yc-fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes yc-card-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>

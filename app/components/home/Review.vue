@@ -24,7 +24,7 @@ defineProps<{
             </p>
             <div class="flex justify-end">
                 <div class="space-y-1 text-right">
-                    <div class="w-10 h-0.5 bg-gradient-to-r from-pink-500/70 to-purple-500/70 ml-auto" />
+                    <div class="w-10 h-0.5 bg-linear-to-r from-pink-500/70 to-purple-500/70 ml-auto"></div>
                     <div class="text-sm text-white/70 font-medium">
                         {{ review.name }}
                     </div>
