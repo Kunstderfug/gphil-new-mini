@@ -2,12 +2,13 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
 
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
+      exclude: ["@sanity/visual-editing", "@sanity/ui", "@sanity/insert-menu", "react-compiler-runtime"],
       esbuildOptions: {
         target: "esnext",
       },
@@ -21,6 +22,7 @@ export default defineNuxtConfig({
     projectId: "b8uar5wl",
     dataset: "production",
     apiVersion: "2025-05-03",
+    visualEditing: false,
   },
   nitro: {
     esbuild: {

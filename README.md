@@ -1,75 +1,51 @@
-# Nuxt Minimal Starter
+# GPhil - Web Application
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+GPhil is a web app that helps musicians practice or perform live an instrumental concerto with orchestral accompaniment. This is the Nuxt 3 port of the original Flutter application.
+
+## Tech Stack
+
+- **Framework:** [Nuxt 4](https://nuxt.com/) (Vue 3)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **State Management:** [Pinia](https://pinia.vuejs.org/)
+- **CMS:** [Sanity](https://www.sanity.io/) (library data, scores)
+- **UI Components:** [Nuxt UI](https://ui.nuxt.com/)
+- **Deployment:** Netlify
 
 ## Setup
 
-Make sure to install dependencies:
-
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Development
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
 
-Build the application for production:
-
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Project Structure
+
+```
+app/
+├── components/       # Vue components
+│   ├── home/         # Landing page sections
+│   └── icons/        # SVG icon components
+├── layouts/          # Page layouts
+├── pages/            # File-based routing
+├── stores/           # Pinia stores
+└── assets/           # CSS, fonts
+```
+
+## Links
+
+- **Live site:** [g-phil.app](https://g-phil.app)
+- **Web app:** [app.g-phil.app](https://app.g-phil.app)
+- **App Store:** [GPhil on Apple App Store](https://apps.apple.com/us/app/gphil/id6740543718)
+- **Microsoft Store:** [GPhil on Microsoft Store](https://apps.microsoft.com/store/detail/9PKKZ2P2DLDG)

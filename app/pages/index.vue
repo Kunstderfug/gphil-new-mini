@@ -10,6 +10,8 @@ useSeoMeta({
     <div class="mt-8">
         <HomeLogo />
         <HomeDownload />
+        <HomeV2Announcement />
+        <HomeLibrary />
         <HomeReviews />
 
         <div id="home-youtube-section" class="my-20">
