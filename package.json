@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "@iconify-json/quill": "^1.2.4"
+    "@iconify-json/quill": "^1.2.4",
+    "@vite-pwa/nuxt": "^1.1.1"
   }
 }

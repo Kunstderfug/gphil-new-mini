@@ -21,13 +21,13 @@ const platforms = [
                 <div class="absolute inset-0 bg-linear-to-br from-pink-500/10 via-transparent to-purple-500/10"></div>
 
                 <div class="relative flex flex-col items-center text-center gap-4">
-                    <span class="text-sm uppercase tracking-[0.2em] text-pink-400/70">Available Now</span>
+                    <span class="text-sm font-semibold uppercase tracking-[0.2em] text-pink-400/70">Available Now</span>
 
                     <h3 class="text-2xl sm:text-3xl font-bold text-white/80">Download GPhil</h3>
 
                     <div class="w-12 h-0.5 bg-linear-to-r from-pink-500/70 to-purple-500/70 rounded-full"></div>
 
-                    <p class="text-base text-gray-400 max-w-md">
+                    <p class="text-base font-medium text-gray-400 max-w-md">
                         Practice or perform live instrumental concertos with orchestral accompaniment
                     </p>
 
@@ -50,9 +50,9 @@ const platforms = [
         </section>
 
         <!-- WEB VERSION -->
-        <div class="flex flex-col items-center justify-center gap-3 mt-8">
-            <p class="text-lg text-white/70 text-center !mb-0">You can try GPhil in the web version</p>
-            <p class="text-base text-gray-500 text-center !mt-0">(in development, only for large screens so far)</p>
+        <div class="hidden lg:flex flex-col items-center justify-center gap-3 mt-8">
+            <p class="text-xl font-medium text-white/70 text-center !mb-0">You can try GPhil in the web version</p>
+            <p class="text-base font-medium text-gray-500 text-center !mt-0">(in development, only for large screens so far)</p>
 
             <NuxtLink to="https://app.g-phil.app" class="w-full flex justify-center items-center mt-2">
                 <Button

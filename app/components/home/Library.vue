@@ -65,7 +65,7 @@ const totalPieces = computed(() => library.value?.length ?? 0);
                             class="absolute inset-0 rounded-full bg-linear-to-r from-purple-500/20 to-indigo-500/20"
                             :style="{ width: `${score.complete}%` }"
                         ></div>
-                        <span class="relative text-base text-white/60">{{ score.shortTitle }}</span>
+                        <span class="relative text-base font-medium text-white/60">{{ score.shortTitle }}</span>
                     </div>
                 </div>
             </div>

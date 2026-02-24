@@ -8,7 +8,7 @@ body {
 }
 
 @layer utilities {
-    /* roboto-100 - latin */
+    /* roboto-100 - thin */
     @font-face {
         font-family: "Roboto";
         font-style: normal;
@@ -17,9 +17,42 @@ body {
         src:
             local(""),
             url("../../assets/fonts/roboto-v27-latin-100.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../../assets/fonts/roboto-v27-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url("../../assets/fonts/roboto-v27-latin-100.woff") format("woff"),
+            url("/fonts/Roboto-Thin.ttf") format("truetype");
     }
-    /* roboto-500 - latin */
+    /* roboto-300 - light */
+    @font-face {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src:
+            local(""),
+            url("/fonts/Roboto-Light.ttf") format("truetype");
+    }
+    /* roboto-400 - regular */
+    @font-face {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src:
+            local(""),
+            url("/fonts/Roboto-Regular.ttf") format("truetype");
+    }
+    /* roboto-500 - medium */
+    @font-face {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src:
+            local(""),
+            url("../../assets/fonts/roboto-v27-latin-500.woff2") format("woff2"),
+            url("../../assets/fonts/roboto-v27-latin-500.woff") format("woff"),
+            url("/fonts/Roboto-Medium.ttf") format("truetype");
+    }
+    /* roboto-700 - bold */
     @font-face {
         font-family: "Roboto";
         font-style: normal;
@@ -27,8 +60,17 @@ body {
         font-display: swap;
         src:
             local(""),
-            url("../../assets/fonts/roboto-v27-latin-500.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../../assets/fonts/roboto-v27-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url("/fonts/Roboto-Bold.ttf") format("truetype");
+    }
+    /* roboto-900 - black */
+    @font-face {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src:
+            local(""),
+            url("/fonts/Roboto-Black.ttf") format("truetype");
     }
 }
 
