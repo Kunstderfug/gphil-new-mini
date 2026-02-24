@@ -39,7 +39,12 @@ export default defineNuxtConfig({
         { name: "theme-color", content: "#27272a" },
       ],
 
-      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+      link: [
+        { rel: "icon", type: "image/png", href: "/favicon.png" },
+        { rel: "dns-prefetch", href: "https://www.youtube.com" },
+        { rel: "dns-prefetch", href: "https://cdn.sanity.io" },
+        { rel: "preconnect", href: "https://cdn.sanity.io", crossorigin: "" },
+      ],
     },
   },
 });

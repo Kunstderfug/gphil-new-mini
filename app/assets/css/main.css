@@ -66,41 +66,48 @@ body {
 
     body {
         font-family: "Roboto", sans-serif;
-        @apply bg-linear-to-b from-zinc-900 via-purple-900 to-stone-800 text-lg leading-loose text-gray-100 xl:text-xl xl:leading-loose 2xl:text-2xl;
-        @apply bg-[url('/assets/bg-dark-desktop.webp')] bg-no-repeat bg-cover bg-fixed bg-center;
+        position: relative;
+        z-index: 0;
+        @apply bg-linear-to-b from-zinc-900 via-purple-900 to-stone-800 text-base leading-relaxed text-gray-100;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background: url("/assets/bg-dark-desktop.webp") no-repeat center / cover;
+        transform: translateZ(0);
+        will-change: transform;
     }
 
     h1 {
-        @apply my-8 text-4xl md:text-6xl;
+        @apply my-6 text-3xl font-bold md:text-5xl leading-tight;
     }
 
     h2 {
-        @apply my-6 text-2xl font-bold md:text-4xl;
+        @apply my-5 text-2xl font-bold md:text-3xl leading-snug;
     }
 
     h3 {
-        @apply my-4 text-2xl font-bold md:text-3xl;
+        @apply my-3 text-xl font-bold md:text-2xl leading-snug;
     }
 
     h4 {
-        @apply my-3 text-xl md:text-2xl;
+        @apply my-2 text-lg font-semibold md:text-xl leading-snug;
     }
 
     h5 {
-        @apply my-2 text-lg md:text-xl;
+        @apply my-2 text-base font-semibold md:text-lg leading-snug;
     }
 
     p {
-        @apply my-4 text-lg leading-normal lg:leading-loose;
+        @apply my-3 text-base leading-relaxed;
     }
 
     li {
-        @apply my-4 text-base leading-normal lg:text-lg lg:leading-loose;
+        @apply my-2 text-base leading-relaxed;
         @apply list-inside list-disc;
-    }
-
-    p {
-        @apply text-base leading-normal lg:text-lg lg:leading-loose;
     }
 
     progress {

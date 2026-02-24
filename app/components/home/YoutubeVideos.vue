@@ -35,6 +35,7 @@ const videos = [
                             :src="`https://www.youtube.com/embed/${video.id}`"
                             :title="video.title"
                             frameborder="0"
+                            loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
                             class="w-full h-full"

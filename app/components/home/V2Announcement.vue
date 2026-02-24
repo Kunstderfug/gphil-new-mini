@@ -13,7 +13,7 @@ const features = [
             <div class="absolute inset-0 bg-linear-to-br from-purple-500/10 via-transparent to-pink-500/10"></div>
 
             <div class="relative flex flex-col items-center text-center gap-4">
-                <span class="text-xs uppercase tracking-[0.2em] text-pink-400/70">Coming Soon</span>
+                <span class="text-sm uppercase tracking-[0.2em] text-pink-400/70">Coming Soon</span>
 
                 <h3 class="text-2xl sm:text-3xl font-bold text-white/80">GPhil v.2</h3>
 
@@ -25,12 +25,12 @@ const features = [
                         :key="feature.label"
                         class="flex flex-col gap-1 p-4 rounded-lg bg-white/5 border border-white/10"
                     >
-                        <span class="text-sm font-semibold text-purple-300">{{ feature.label }}</span>
-                        <span class="text-xs text-gray-400">{{ feature.description }}</span>
+                        <span class="text-base font-semibold text-purple-300">{{ feature.label }}</span>
+                        <span class="text-sm text-gray-400">{{ feature.description }}</span>
                     </div>
                 </div>
 
-                <p class="text-sm text-gray-400 mt-2">Expected release: ~1 month</p>
+                <p class="text-base text-gray-400 mt-2">Expected release: ~1 month</p>
             </div>
         </div>
     </div>

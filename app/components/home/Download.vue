@@ -1,81 +1,60 @@
-/** eslint-disable vue/html-self-closing */ /** eslint-disable vue/html-self-closing */
 <script lang="ts" setup>
 const style = useStyle();
 
-const announcementText = "GPhil is now officially available on Apple and Microsoft App Store!";
+const platforms = [
+    { name: "macOS", icon: "/assets/macos.webp", url: "https://apps.apple.com/us/app/gphil/id6740543718" },
+    { name: "iPad", icon: "/assets/ios.webp", url: "https://apps.apple.com/us/app/gphil/id6740543718" },
+    {
+        name: "Windows",
+        icon: "/assets/windows.svg",
+        url: "https://apps.microsoft.com/store/detail/9PKKZ2P2DLDG?cid=DevShareMCLPCB",
+    },
+];
 </script>
 
 <template>
     <div>
-        <!-- DOWNLOAD DESKTOP APPS -->
         <section>
-            <!-- <HomeTitle title="Download G-Phil Apps" /> -->
             <div
-                class="w-full flex justify-center border border-white/10 backdrop-blur-md rounded-xl shadow-2xl p-8 my-6"
+                class="relative overflow-hidden rounded-xl border border-purple-400/20 bg-white/5 backdrop-blur-md shadow-lg p-6 sm:p-8 my-6"
             >
-                <div class="w-full">
-                    <div
-                        class="bg-linear-to-r from-pink-500/80 to-purple-600/80 font-bold text-lg p-4 rounded-lg shadow-lg text-white/70 text-center custom-pulse"
-                    >
-                        {{ announcementText }}
-                    </div>
+                <div class="absolute inset-0 bg-linear-to-br from-pink-500/10 via-transparent to-purple-500/10"></div>
 
-                    <div class="w-full flex flex-col justify-start items-center h-auto">
-                        <div
-                            class="w-full flex flex-col items-center justify-center sm:grid sm:grid-cols-3 sm:justify-items-center gap-6 mt-8"
+                <div class="relative flex flex-col items-center text-center gap-4">
+                    <span class="text-sm uppercase tracking-[0.2em] text-pink-400/70">Available Now</span>
+
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white/80">Download GPhil</h3>
+
+                    <div class="w-12 h-0.5 bg-linear-to-r from-pink-500/70 to-purple-500/70 rounded-full"></div>
+
+                    <p class="text-base text-gray-400 max-w-md">
+                        Practice or perform live instrumental concertos with orchestral accompaniment
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-4 sm:gap-6 mt-2 w-full max-w-md">
+                        <NuxtLink
+                            v-for="platform in platforms"
+                            :key="platform.name"
+                            :to="platform.url"
+                            target="_blank"
+                            class="flex flex-col items-center gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105"
                         >
-                            <NuxtLink to="https://apps.apple.com/us/app/gphil/id6740543718" target="_blank">
-                                <div
-                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 w-52"
-                                >
-                                    <span class="font-semibold text-white/70 text-lg">For macOS</span>
-
-                                    <div class="w-16 h-16 flex items-center justify-center overflow-hidden rounded">
-                                        <img src="/assets/macos.webp" alt="macos" class="w-full h-full object-cover" />
-                                    </div>
-                                </div>
-                            </NuxtLink>
-
-                            <NuxtLink to="https://apps.apple.com/us/app/gphil/id6740543718" target="_blank">
-                                <div
-                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 w-32"
-                                >
-                                    <span class="font-semibold text-white/70 text-lg">For iPad</span>
-                                    <div class="w-16 h-16 flex items-center justify-center overflow-hidden rounded">
-                                        <img src="/assets/ios.webp" alt="iPad" class="w-full h-full object-contain" />
-                                    </div>
-                                </div>
-                            </NuxtLink>
-
-                            <NuxtLink
-                                to="https://apps.microsoft.com/store/detail/9PKKZ2P2DLDG?cid=DevShareMCLPCB"
-                                target="_blank"
-                            >
-                                <div
-                                    class="flex flex-col items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 w-52"
-                                >
-                                    <span class="font-semibold text-white/70 text-lg">For Windows</span>
-                                    <div class="w-16 h-16 flex items-center justify-center overflow-hidden rounded">
-                                        <img
-                                            src="/assets/windows.svg"
-                                            alt="windows"
-                                            class="w-full h-full object-cover"
-                                        />
-                                    </div>
-                                </div>
-                            </NuxtLink>
-                        </div>
+                            <div class="w-12 h-12 flex items-center justify-center overflow-hidden rounded">
+                                <NuxtImg :src="platform.icon" :alt="platform.name" class="w-full h-full object-contain" loading="lazy" />
+                            </div>
+                            <span class="text-sm font-semibold text-white/70">{{ platform.name }}</span>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- TO THE DOCS AND LIBRARY BUTTON -->
-        <div class="flex flex-col items-center justify-center gap-4 mt-8">
-            <div class="font-bold text-xl text-white/70 text-center">Or continue to the web version</div>
-            <p class="text-sm text-gray-400 text-center">(in development, only for large screens so far)</p>
+        <!-- WEB VERSION -->
+        <div class="flex flex-col items-center justify-center gap-3 mt-8">
+            <p class="text-lg text-white/70 text-center !mb-0">You can try GPhil in the web version</p>
+            <p class="text-base text-gray-500 text-center !mt-0">(in development, only for large screens so far)</p>
 
-            <NuxtLink to="https://app.g-phil.app" class="w-full flex justify-center items-center mt-4">
+            <NuxtLink to="https://app.g-phil.app" class="w-full flex justify-center items-center mt-2">
                 <Button
                     :class="style.buttonSizes.standard"
                     :bg="style.buttonColors.transparent"
@@ -93,19 +72,3 @@ const announcementText = "GPhil is now officially available on Apple and Microso
         </div>
     </div>
 </template>
-
-<style scoped>
-.custom-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse {
-    0%,
-    100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.7;
-    }
-}
-</style>

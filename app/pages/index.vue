@@ -15,10 +15,10 @@ useSeoMeta({
         <HomeReviews />
 
         <div id="home-youtube-section" class="my-20">
-            <HomeYoutubeVideos />
+            <LazyHomeYoutubeVideos />
         </div>
         <div class="my-20">
-            <HomeYoutubeChannel />
+            <LazyHomeYoutubeChannel />
         </div>
         <!-- <HomeSupport /> -->
         <!-- <HomeFeedback /> -->

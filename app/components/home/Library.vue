@@ -49,7 +49,7 @@ const totalPieces = computed(() => library.value?.length ?? 0);
 
         <div v-else-if="composers.length" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div v-for="composer in composers" :key="composer.name">
-                <h3 class="text-sm font-bold text-white/70 tracking-wide mb-3">
+                <h3 class="text-base font-bold text-white/70 tracking-wide mb-3">
                     {{ composer.name.toUpperCase() }}
                     <span v-if="composer.scores.length > 1" class="text-gray-500 font-normal">
                         ({{ composer.scores.length }})
@@ -65,7 +65,7 @@ const totalPieces = computed(() => library.value?.length ?? 0);
                             class="absolute inset-0 rounded-full bg-linear-to-r from-purple-500/20 to-indigo-500/20"
                             :style="{ width: `${score.complete}%` }"
                         ></div>
-                        <span class="relative text-sm text-white/60">{{ score.shortTitle }}</span>
+                        <span class="relative text-base text-white/60">{{ score.shortTitle }}</span>
                     </div>
                 </div>
             </div>
