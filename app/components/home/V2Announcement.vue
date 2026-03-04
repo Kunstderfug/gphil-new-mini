@@ -7,12 +7,12 @@ const features = [
 
 <template>
     <div class="mt-10 mb-4">
-        <div
-            class="relative overflow-hidden rounded-xl border border-purple-400/20 bg-white/5 backdrop-blur-md shadow-lg p-6 sm:p-8"
+        <HomeContentCard
+            gradient
+            wrapper-class="p-6 sm:p-8"
+            gradient-class="from-purple-500/10 via-transparent to-pink-500/10"
         >
-            <div class="absolute inset-0 bg-linear-to-br from-purple-500/10 via-transparent to-pink-500/10"></div>
-
-            <div class="relative flex flex-col items-center text-center gap-4">
+            <div class="flex flex-col items-center text-center gap-4">
                 <span class="text-sm font-semibold uppercase tracking-[0.2em] text-pink-400/70">Coming Soon</span>
 
                 <h3 class="text-2xl sm:text-3xl font-bold text-white/80">GPhil v.2</h3>
@@ -32,6 +32,6 @@ const features = [
 
                 <p class="text-base font-medium text-gray-400 mt-2">Expected release: ~1 month</p>
             </div>
-        </div>
+        </HomeContentCard>
     </div>
 </template>

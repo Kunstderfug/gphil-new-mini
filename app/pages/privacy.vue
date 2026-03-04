@@ -2,9 +2,7 @@
     <div class="max-w-4xl mx-auto px-4 py-12">
         <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12">
             <div class="privacy-policy">
-                <h1
-                    class="text-4xl font-bold mb-4 bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent"
-                >
+                <h1 class="text-4xl font-bold mb-4 bg-linear-to-r from-white to-white/70 bg-clip-text text-transparent">
                     Privacy Policy
                 </h1>
                 <p class="text-white/70 italic mb-12 text-lg">Last Updated: 2025-01-18</p>
@@ -96,26 +94,13 @@
                     </p>
                 </section>
 
-                <NuxtLink to="/" class="w-full flex justify-center items-center mt-4">
-                    <Button
-                        :class="style.buttonSizes.standard"
-                        :bg="style.buttonColors.transparent"
-                        sm
-                        rounded
-                        icon
-                        dark
-                        left
-                        text="Back to Home"
-                        class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-400/30 backdrop-blur-md shadow-lg hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300"
-                    >
-                        <UIcon name="i-quill:chevron-left" :class="style.iconSize" />
-                    </Button>
-                </NuxtLink>
+                <div class="w-full flex justify-center items-center mt-4">
+                    <SoftLinkButton to="/">
+                        <UIcon name="i-quill:chevron-left" class="text-base" />
+                        <span>Back to Home</span>
+                    </SoftLinkButton>
+                </div>
             </div>
         </div>
     </div>
 </template>
-
-<script setup>
-const style = useStyle();
-</script>

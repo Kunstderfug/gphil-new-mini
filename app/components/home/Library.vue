@@ -59,10 +59,10 @@ const totalPieces = computed(() => library.value?.length ?? 0);
                     <div
                         v-for="score in composer.scores"
                         :key="score._id"
-                        class="relative overflow-hidden rounded-full px-3 py-0.5 leading-snug bg-gray-800/30 border border-white/5 flex items-center"
+                        class="relative overflow-hidden rounded-full px-3 py-0.5 leading-snug bg-linear-to-r from-pink-500/2 via-transparent to-purple-500/2 border border-purple-400/8 flex items-center backdrop-blur-sm"
                     >
                         <div
-                            class="absolute inset-0 rounded-full bg-linear-to-r from-purple-500/20 to-indigo-500/20"
+                            class="absolute inset-y-0 left-0 rounded-full bg-linear-to-r from-pink-500/14 to-purple-500/12 transition-[width] duration-300"
                             :style="{ width: `${score.complete}%` }"
                         ></div>
                         <span class="relative text-base font-medium text-white/60">{{ score.shortTitle }}</span>
