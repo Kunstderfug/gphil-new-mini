@@ -11,6 +11,12 @@
                 Commission a Score
             </NuxtLink>
             <NuxtLink
+                to="/support-gphil"
+                class="text-base font-semibold text-purple-300 hover:text-purple-200 transition-colors duration-200"
+            >
+                Support GPhil
+            </NuxtLink>
+            <NuxtLink
                 to="https://docs.g-phil.app"
                 target="_blank"
                 class="text-base font-semibold text-purple-300 hover:text-purple-200 transition-colors duration-200"
