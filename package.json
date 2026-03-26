@@ -10,23 +10,23 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/eslint": "1.9.0",
-    "@nuxt/image": "1.11.0",
-    "@nuxt/ui": "4.0.1",
-    "@nuxtjs/sanity": "2.2.0",
+    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/image": "^1.11.0",
+    "@nuxt/ui": "^4.6.0",
+    "@nuxtjs/sanity": "^2.2.0",
     "@pinia/nuxt": "^0.11.3",
-    "@tailwindcss/vite": "^4.1.17",
-    "eslint": "^9.39.1",
-    "nuxt": "^4.3.1",
+    "@tailwindcss/vite": "^4.2.2",
+    "eslint": "^10.1.0",
+    "nuxt": "^4.4.2",
     "pinia": "^3.0.4",
-    "tailwindcss": "^4.1.17",
+    "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
-    "vue": "^3.5.24",
-    "vue-router": "^5.0.3"
+    "vue": "^3.5.31",
+    "vue-router": "^5.0.4"
   },
   "pnpm": {
     "overrides": {
-      "vite": "8.0.0-beta.15"
+      "vite": "^8.0.0-beta.15"
     },
     "onlyBuiltDependencies": [
       "@parcel/watcher",
