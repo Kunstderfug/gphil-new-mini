@@ -30,7 +30,7 @@ const features = [
                     </div>
                 </div>
 
-                <p class="text-base font-medium text-gray-400 mt-2">Expected release: ~1 month</p>
+                <p class="text-base font-medium text-gray-400 mt-2">Expected release: Mid-April</p>
             </div>
         </HomeContentCard>
     </div>
