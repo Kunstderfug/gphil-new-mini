@@ -21,6 +21,12 @@ useSeoMeta({
 
 <template>
     <div class="mt-10 mb-16 space-y-8 sm:space-y-10">
+        <SectionTitle
+            eyebrow="Direct Commissioning"
+            title="Commission a Score"
+            subtitle="If you want a rare or unique score added to the GPhil library, or want your favorite score ready as soon as possible, contact me directly by email. Commissioned work is handled with top priority ahead of my current queue."
+        />
+
         <section>
             <HomeContentCard gradient wrapper-class="p-6 sm:p-8 lg:p-10">
                 <div class="absolute -top-16 -right-16 h-44 w-44 rounded-full bg-pink-500/15 blur-3xl"></div>
@@ -28,14 +34,6 @@ useSeoMeta({
 
                 <div class="relative flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                     <div class="max-w-2xl space-y-4">
-                        <span class="text-sm font-semibold uppercase tracking-[0.2em] text-pink-400/70"
-                            >Direct Commissioning</span
-                        >
-                        <h1 class="my-0! text-3xl sm:text-4xl lg:text-5xl font-bold text-white/90">
-                            Commission a Score
-                        </h1>
-                        <div class="h-0.5 w-16 rounded-full bg-linear-to-r from-pink-500/70 to-purple-500/70"></div>
-
                         <p class="my-0! text-base sm:text-lg font-medium leading-relaxed text-gray-300">
                             If you want a rare or unique score added to the GPhil library, or want your favorite score
                             ready as soon as possible, contact me directly by
