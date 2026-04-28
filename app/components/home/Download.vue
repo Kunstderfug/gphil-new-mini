@@ -2,11 +2,11 @@
 const platforms = [
     { name: "macOS", icon: "/assets/macos.webp", url: "https://apps.apple.com/us/app/gphil/id6740543718" },
     { name: "iPad", icon: "/assets/ios.webp", url: "https://apps.apple.com/us/app/gphil/id6740543718" },
-    {
-        name: "Windows",
-        icon: "/assets/windows.svg",
-        url: "https://apps.microsoft.com/store/detail/9PKKZ2P2DLDG?cid=DevShareMCLPCB",
-    },
+    // {
+    //     name: "Windows",
+    //     icon: "/assets/windows.svg",
+    //     url: "https://apps.microsoft.com/store/detail/9PKKZ2P2DLDG?cid=DevShareMCLPCB",
+    // },
 ];
 </script>
 
@@ -25,7 +25,7 @@ const platforms = [
                         Practice or perform live instrumental concertos with orchestral accompaniment
                     </p>
 
-                    <div class="grid grid-cols-3 gap-4 sm:gap-6 mt-2 w-full max-w-md">
+                    <div class="grid grid-cols-2 gap-4 sm:gap-6 mt-2 w-full max-w-md">
                         <NuxtLink
                             v-for="platform in platforms"
                             :key="platform.name"
