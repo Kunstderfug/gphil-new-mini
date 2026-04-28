@@ -17,15 +17,20 @@ const platforms = [
                 <div class="flex flex-col items-center text-center gap-4">
                     <span class="text-sm font-semibold uppercase tracking-[0.2em] text-pink-400/70">Available Now</span>
 
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white/80">Download GPhil</h3>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-white/80">
+                        A virtual orchestra built for real musical freedom
+                    </h3>
 
                     <div class="w-12 h-0.5 bg-linear-to-r from-pink-500/70 to-purple-500/70 rounded-full"></div>
 
                     <p class="text-base font-medium text-gray-400 max-w-md">
-                        Practice or perform live instrumental concertos with orchestral accompaniment
+                        Practice and perform concertos with orchestral accompaniment that supports your interpretation,
+                        not the other way around.
                     </p>
 
-                    <div class="grid grid-cols-2 gap-4 sm:gap-6 mt-2 w-full max-w-md">
+                    <span class="text-sm font-semibold uppercase tracking-[0.2em] text-white/60 mt-2">Download</span>
+
+                    <div class="grid grid-cols-2 gap-4 sm:gap-6 w-full max-w-md">
                         <NuxtLink
                             v-for="platform in platforms"
                             :key="platform.name"
